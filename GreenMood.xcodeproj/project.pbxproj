@@ -40,6 +40,9 @@
 		077EA3F72A6D279500EB0206 /* FaqDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077EA3F62A6D279500EB0206 /* FaqDetailsViewModel.swift */; };
 		077EA3FB2A6D27F700EB0206 /* FaqDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077EA3F92A6D27F700EB0206 /* FaqDetailsCell.swift */; };
 		077EA3FC2A6D27F700EB0206 /* FaqDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 077EA3FA2A6D27F700EB0206 /* FaqDetailsCell.xib */; };
+		078BABDB2A8604AE00A62639 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078BABDA2A8604AE00A62639 /* Model.swift */; };
+		078BABDD2A8606FC00A62639 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078BABDC2A8606FC00A62639 /* ProfileController.swift */; };
+		078BABE02A86084300A62639 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078BABDF2A86084300A62639 /* ProfileCell.swift */; };
 		078F7A9E2A3DEF1D000CEC6D /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078F7A9D2A3DEF1D000CEC6D /* MainCoordinator.swift */; };
 		078F7AA02A3DEF82000CEC6D /* LaunchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078F7A9F2A3DEF82000CEC6D /* LaunchCoordinator.swift */; };
 		078F7AA22A3DF113000CEC6D /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078F7AA12A3DF113000CEC6D /* LoginCoordinator.swift */; };
@@ -107,6 +110,9 @@
 		077EA3F62A6D279500EB0206 /* FaqDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqDetailsViewModel.swift; sourceTree = "<group>"; };
 		077EA3F92A6D27F700EB0206 /* FaqDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqDetailsCell.swift; sourceTree = "<group>"; };
 		077EA3FA2A6D27F700EB0206 /* FaqDetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FaqDetailsCell.xib; sourceTree = "<group>"; };
+		078BABDA2A8604AE00A62639 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		078BABDC2A8606FC00A62639 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		078BABDF2A86084300A62639 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		078F7A9D2A3DEF1D000CEC6D /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		078F7A9F2A3DEF82000CEC6D /* LaunchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCoordinator.swift; sourceTree = "<group>"; };
 		078F7AA12A3DF113000CEC6D /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
@@ -349,6 +355,7 @@
 				07E83BCD2A4F48A800609ECD /* DiseaseController */,
 				077EA3DD2A6D1E6D00EB0206 /* FAQController */,
 				077EA3ED2A6D26C700EB0206 /* FaqDetailsController */,
+				078BABD72A86048900A62639 /* ProfileController */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -447,6 +454,40 @@
 				077EA3F42A6D278000EB0206 /* FaqDetailsController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		078BABD72A86048900A62639 /* ProfileController */ = {
+			isa = PBXGroup;
+			children = (
+				078BABD82A86049300A62639 /* Model */,
+				078BABD92A86049900A62639 /* Controller */,
+				078BABDE2A86082400A62639 /* Cell */,
+			);
+			path = ProfileController;
+			sourceTree = "<group>";
+		};
+		078BABD82A86049300A62639 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				078BABDA2A8604AE00A62639 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		078BABD92A86049900A62639 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				078BABDC2A8606FC00A62639 /* ProfileController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		078BABDE2A86082400A62639 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				078BABDF2A86084300A62639 /* ProfileCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		078F7A982A3DEEEB000CEC6D /* Coordinator */ = {
@@ -902,6 +943,7 @@
 				078F7AB12A3DF6CB000CEC6D /* RegisterViewModel.swift in Sources */,
 				071B6EAE2A438CB10076D16F /* DetailsCell.swift in Sources */,
 				07E83BD92A4F49B200609ECD /* DiseaseCell.swift in Sources */,
+				078BABDD2A8606FC00A62639 /* ProfileController.swift in Sources */,
 				07B067D52A667B7A0000C823 /* DiseaseDetailsController.swift in Sources */,
 				077EA3F72A6D279500EB0206 /* FaqDetailsViewModel.swift in Sources */,
 				07BD6A2C2A3F1A6F00C9CDCA /* NetworkManager.swift in Sources */,
@@ -909,6 +951,7 @@
 				078F7A9E2A3DEF1D000CEC6D /* MainCoordinator.swift in Sources */,
 				071B6ED12A45BC950076D16F /* SpecialCell.swift in Sources */,
 				07BD6A242A3F19B400C9CDCA /* HomeController.swift in Sources */,
+				078BABE02A86084300A62639 /* ProfileCell.swift in Sources */,
 				078F7AA92A3DF63A000CEC6D /* Constant.swift in Sources */,
 				07E83BD52A4F497F00609ECD /* DiseaseController.swift in Sources */,
 				07E83BD32A4F496B00609ECD /* Disease.swift in Sources */,
@@ -925,6 +968,7 @@
 				077C14FC2A3E3A1B00ACF686 /* Login.swift in Sources */,
 				077EA3E62A6D1EA300EB0206 /* FAQ.swift in Sources */,
 				077EA3EA2A6D1EC700EB0206 /* FAQController.swift in Sources */,
+				078BABDB2A8604AE00A62639 /* Model.swift in Sources */,
 				07C68B242A3F957A000D4791 /* HomeManager.swift in Sources */,
 				077C14FE2A3E3A2300ACF686 /* LoginViewModel.swift in Sources */,
 				077C14F72A3E39BA00ACF686 /* LoginAdapter.swift in Sources */,
