@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>700688453717-9tsdjpl0evkfs66tr9brjp2o67mqoscb.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.700688453717-9tsdjpl0evkfs66tr9brjp2o67mqoscb</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCCPzMTWYYQXgZzG69XvfaJcTjXBEZDK6Y</string>
+	<key>GCM_SENDER_ID</key>
+	<string>700688453717</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Alparslan.GreenMood</string>
+	<key>PROJECT_ID</key>
+	<string>greenmood-7a6a8</string>
+	<key>STORAGE_BUCKET</key>
+	<string>greenmood-7a6a8.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:700688453717:ios:fc60afe8938bd7d95244dc</string>
+	<key>DATABASE_URL</key>
+	<string>https://greenmood-7a6a8-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

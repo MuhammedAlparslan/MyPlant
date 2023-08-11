@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DiseaseDCell" customModule="GreenMood" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="771" height="1441"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="771" height="1441"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hSB-Xt-04x">
+                        <rect key="frame" x="0.0" y="-5" width="771" height="720.66666666666663"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is Fairy Ring (Agrocybe)?" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F82-t3-thw">
+                        <rect key="frame" x="0.0" y="723.66666666666663" width="771" height="31.666666666666629"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
+                        <color key="textColor" name="LabelColor 1"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwH-bd-67j">
+                        <rect key="frame" x="0.0" y="763.33333333333348" width="771" height="635.66666666666652"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <string key="text">A fairy ring is a lawn issue where circular bands of dark green or dying grass appear. Different fungi like Agrocybe, Marasmius oreades, and Lepiota species cause it. Fairy rings can be found on lawns worldwide. The size and shape of the rings depend on the fungus and environment. Common symptoms of the fairy ring include forming a ring pattern with vibrant or dead grass. Some fungi produce mushrooms without rings, while others create rings without mushrooms. This issue affects actively growing turf, including cool-season and Bermudagrass.</string>
+                        <color key="textColor" name="LabelColor 1"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="DwH-bd-67j" firstAttribute="trailing" secondItem="F82-t3-thw" secondAttribute="trailing" id="0pG-qu-F8C"/>
+                <constraint firstItem="hSB-Xt-04x" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.5" id="1JY-bS-FPX"/>
+                <constraint firstItem="F82-t3-thw" firstAttribute="trailing" secondItem="hSB-Xt-04x" secondAttribute="trailing" id="1jl-hb-fMG"/>
+                <constraint firstItem="DwH-bd-67j" firstAttribute="leading" secondItem="F82-t3-thw" secondAttribute="leading" id="4Mz-0s-MCm"/>
+                <constraint firstItem="hSB-Xt-04x" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="5zj-Xk-VxJ"/>
+                <constraint firstItem="F82-t3-thw" firstAttribute="top" secondItem="hSB-Xt-04x" secondAttribute="bottom" constant="8" id="LaQ-1N-CBY"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="hSB-Xt-04x" secondAttribute="trailing" id="eRu-aq-7Sb"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="top" secondItem="hSB-Xt-04x" secondAttribute="top" constant="64" id="mis-RK-kQg"/>
+                <constraint firstItem="F82-t3-thw" firstAttribute="leading" secondItem="hSB-Xt-04x" secondAttribute="leading" id="n1x-FH-juU"/>
+                <constraint firstItem="DwH-bd-67j" firstAttribute="top" secondItem="F82-t3-thw" secondAttribute="bottom" constant="8" id="oSt-Z5-hTA"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="DwH-bd-67j" secondAttribute="bottom" constant="8" id="oxL-aS-nST"/>
+            </constraints>
+            <size key="customSize" width="392" height="496"/>
+            <connections>
+                <outlet property="titleDescription" destination="F82-t3-thw" id="TxG-Pq-rfE"/>
+                <outlet property="titleImage" destination="hSB-Xt-04x" id="PzA-XW-Ie2"/>
+                <outlet property="titleInfo" destination="DwH-bd-67j" id="Y1D-Ud-SuL"/>
+            </connections>
+            <point key="canvasLocation" x="377.86259541984731" y="176.40845070422537"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="LabelColor 1">
+            <color red="0.41568627450980394" green="0.43529411764705883" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
