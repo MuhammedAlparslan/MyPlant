@@ -48,4 +48,9 @@ class HomeCoordinator {
         controller.viewModel.item = data
         navigationController.show(controller, sender: nil)
     }
+    
+    func showLogOut(data: Any ) {
+        
+    }
 }
+

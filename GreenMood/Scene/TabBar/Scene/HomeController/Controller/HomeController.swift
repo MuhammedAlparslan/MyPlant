@@ -104,21 +104,6 @@ class HomeController: UIViewController {
     @IBAction func faqClicked(_ sender: Any) {
         coordinator?.getFAQQuestion()
     }
-    
-    @IBAction func logout(_ sender: Any) {
-        let alert = UIAlertController(title: "Warning", message: "Are you sure to log out?", preferredStyle: .alert)
-        let yesAction = UIAlertAction(title: "Yes", style: .default) { (_) in
-            if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-               let sceneDelegate = scene.delegate as? SceneDelegate {
-                UserDefaults.standard.set(false, forKey: "loggedIn")
-                sceneDelegate.setLoginRootController(windowScene: scene)
-            }
-        }
-        let noAction = UIAlertAction(title: "No", style: .cancel, handler: nil)
-        alert.addAction(yesAction)
-        alert.addAction(noAction)
-        present(alert, animated: true, completion: nil)
-    }
 }
 
 
@@ -151,3 +136,4 @@ extension HomeController: UICollectionViewDelegate, UICollectionViewDataSource, 
         coordinator?.showPlantDetails(plantId: viewModel.items[indexPath.row].id ?? 0)
     }
 }
+
